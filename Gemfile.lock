@@ -22,6 +22,7 @@ GEM
     multi_json (1.19.1)
     net-http (0.9.1)
       uri (>= 0.11.1)
+    thor (1.4.0)
     uri (1.1.1)
 
 PLATFORMS
@@ -32,6 +33,7 @@ DEPENDENCIES
   elasticsearch (~> 7.0)
   elasticsearch-api (~> 7.0)
   elasticsearch-transport (~> 7.0)
+  thor (~> 1.4)
 
 BUNDLED WITH
    2.5.22
