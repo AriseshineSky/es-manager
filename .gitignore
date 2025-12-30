@@ -1,0 +1,63 @@
+# Bundler
+/.bundle
+/vendor/bundle
+
+# Rails
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore database files
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore uploaded files
+/storage/*
+!/storage/.keep
+/public/system/*
+/public/uploads
+
+# Ignore environment config
+/config/master.key
+/.env
+/.env.* 
+
+# Byebug command history
+.byebug_history
+
+# Ignore node modules if using webpacker or js bundling
+/node_modules
+
+# Ignore Yarn / npm log files
+/yarn-error.log
+/npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore IDE/editor files
+/.idea
+/.vscode
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Ignore Ruby version managers
+.ruby-version
+.ruby-gemset
+
+# Ignore log and tmp files
+*.log
+*.tmp
+*.pid
+*.seed
+
+# Ignore compiled assets
+/public/assets
+/public/packs
+/public/packs-test
+
+# Ignore Gemfile.lock for engines/plugins if necessary
+# Gemfile.lock
+

@@ -1,0 +1,25 @@
+# frozen_string_literal: true
+#
+# !/usr/bin/env ruby
+
+
+require 'bundler/setup'
+require 'thor'
+require_relative '../lib/es_manager/application/migrate_use_case'
+
+module AmzEsMigrator
+  class CLI < Thor
+    desc 'migrate OLD_INDEX NEW_INDEX", "Migrate data from OLD_INDEX to NEW_INDEX'
+    option :batch_size, type: :numeric, default: 1000
+
+    def migrate(old_index, new_index)
+      usecase = EsManager::Application::MigrateUseCase.new(
+        old_index: old_index,
+        new_index: new_index
+      )
+      usecase.execute(batch_size: options[:batch_size])
+    end
+  end
+end
+
+AmzEsMigrator::CLI.start(ARGV)

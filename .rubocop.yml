@@ -1,0 +1,11 @@
+AllCops:
+  TargetRubyVersion: 3.3.8
+  NewCops: enable
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 30
+  Exclude:
+    - 'spec/**/*.rb'
